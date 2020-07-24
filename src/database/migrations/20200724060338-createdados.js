@@ -19,7 +19,7 @@ module.exports = {
       allowNull: false,
     }, 
     participation: {
-      type: Sequelize.DOUBLE,
+      type: Sequelize.REAL,
       allowNull: false,
     }, 
     created_at:{
