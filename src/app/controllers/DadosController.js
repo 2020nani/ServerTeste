@@ -30,7 +30,6 @@ class DadosController {
     })
     const { firstname, lastname, participation } = await dados.update(req.body);
     return res.json({
-      id,
       firstname,
       lastname,
       participation

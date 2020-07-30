@@ -1,4 +1,4 @@
-import 'dotenv/config'
+require('./bootstrap');
 
 import express from 'express';
 import routes from './routes';
