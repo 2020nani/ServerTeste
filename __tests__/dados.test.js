@@ -39,9 +39,10 @@ describe('Dados', ()=>{
   it('deve listar itens',async () =>{
     const response = await request(app)
     .get('/dados')
-    console.log(response.body)
+    const {id} = response.body
+    console.log(id)
     
-    //se cadastrou espera que retorne id
+    
     expect(response.body)
   });
 
