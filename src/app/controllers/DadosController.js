@@ -23,6 +23,13 @@ class DadosController {
     })
     return res.json(dados)
   }
+  async index1(req, res) {
+    const dados = await Dado.findOne({
+      where: {id : req.params.id}
+
+    })
+    return res.json(dados)
+  }
 
   async update(req, res) {
     const dados = await Dado.findOne({
